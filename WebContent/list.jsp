@@ -32,19 +32,25 @@
 			<tr>
 				<td>이름(name)</td>
 				<!-- <td>이효리</td> -->
-				<td><%=personList.get(1).getName() %></td>
+				<td><%=personList.get(i).getName() %></td>
 			</tr>
 			<tr>
 				<td>핸드폰(hp)</td>
-				<td><%=personList.get(1).getHp() %></td>
+				<td><%=personList.get(i).getHp() %></td>
 			</tr>
 			<tr>
 				<td>회사(company)</td>
-				<td><%=personList.get(1).getCompany() %></td>
+				<td><%=personList.get(i).getCompany() %></td>
+			</tr>
+			<tr>
+				<td>[수정폼]</td>
+				<td><a href="./pbc?action=delete&id=<%=personList.get(i).getPersonId()%>">[삭제]</a></td>
 			</tr>
 		</table>
 		<br>
 	<%} %>
+	
+	<a href="./pbc?action=writeForm">추가번호 등록</a>
 	
 </body>
 </html>
