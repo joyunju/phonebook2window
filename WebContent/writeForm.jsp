@@ -28,6 +28,8 @@
 		<br>
 		회사(company) : <input type="text" name="company" value="">
 		<br>
+		<input type="hidden" name="action" value="write">
+		<br>
 		<button type="submit">등록</button>
 	</form>
 </body>
